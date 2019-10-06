@@ -1,4 +1,4 @@
-package 12c;
+package pl.edu.pjatk.tau;
 
 /**
  * Hello world!

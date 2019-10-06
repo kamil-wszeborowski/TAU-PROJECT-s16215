@@ -1,4 +1,4 @@
-package 12c;
+package pl.edu.pjatk.tau;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
