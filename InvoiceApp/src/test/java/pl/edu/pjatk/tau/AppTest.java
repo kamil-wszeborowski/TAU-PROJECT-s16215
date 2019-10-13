@@ -7,8 +7,6 @@ import org.junit.runners.JUnit4;
 import pl.edu.pjatk.tau.labone.domain.Invoice;
 
 
-
-
 @RunWith(JUnit4.class)
 public class AppTest extends TestCase {
     @Test

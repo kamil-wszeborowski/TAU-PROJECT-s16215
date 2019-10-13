@@ -15,22 +15,17 @@ public class App
         System.out.println( "Poniżej lista dokumentów sprzedaży:" );
         InvoiceDaoManager invoiceDao = new InvoiceDaoImpl();
 
-        //Invoice v1 = invoiceDao.get(1);
-        //System.out.println(v1.getInvoiceNumber());
-
-        /*
-        Invoice createdInvoice = new Invoice(3, 3, "10003/FVT/19", 81.30, 23,  "Bez zaliczki");
-
-        invoiceDao.create(createdInvoice);
-        invoiceDao.update(createdInvoice,2);
-        */
+        Invoice invoiceOne = new Invoice(0, 0, "10000/FVT/19", 81.30, 23,  "Bez zaliczki");
+        invoiceDao.create(invoiceOne);
         for(Invoice item : (List<Invoice>)invoiceDao.getAll()){
-            System.out.println(item.getInvoiceNumber()+" "+ item.getBrutto()+" "+item.getNetto()+" "+ item.getVat());
+            System.out.println(item.getInvoiceNumber()+" "+ item.getBrutto()+" "+item.getNetto()+" "+ item.getVat()+" "+ item.getDescription());
         }
 
-
-
-
+        Invoice invoiceTwo = new Invoice(1, 1, "10001/FVT/19", 813.01, 23,  "Przeglad");
+        invoiceDao.update(invoiceTwo,0);
+        for(Invoice item : (List<Invoice>)invoiceDao.getAll()){
+            System.out.println(item.getInvoiceNumber()+" "+ item.getBrutto()+" "+item.getNetto()+" "+ item.getVat()+" "+ item.getDescription());
+        }
 
 
     }

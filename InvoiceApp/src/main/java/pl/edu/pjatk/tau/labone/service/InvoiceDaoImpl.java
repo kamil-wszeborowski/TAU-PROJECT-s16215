@@ -48,8 +48,19 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
     };
 
     @Override
-    public void update(Invoice invoice, int id){
-
+    public void update(Invoice invoice, int idList){
+        if(!invoices.get(idList).equals(null)) {
+            invoices.get(idList).setId(invoice.getId());
+            invoices.get(idList).setIdKht(invoice.getIdKht());
+            invoices.get(idList).setInvoiceNumber(invoice.getInvoiceNumber());
+            invoices.get(idList).setNetto(invoice.getNetto());
+            invoices.get(idList).setBrutto(invoice.getBrutto());
+            invoices.get(idList).setVat(invoice.getVat());
+            invoices.get(idList).setVatMark(invoice.getVatMark());
+            invoices.get(idList).setDescription(invoice.getDescription());
+        }else {
+            throw new IndexOutOfBoundsException("Something go wrong! In the database not found record with id:" + idList);
+        }
     };
 
     @Override

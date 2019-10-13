@@ -76,6 +76,30 @@ public class InvoiceDaoImplTest {
         assertNotEquals("The method did not remove the record from the collection!",sizeBeforeDelete,sizeAfterDelete);
     }
 
+    @Test (expected = IndexOutOfBoundsException.class)
+    public void invoiceDaoImplUpdateMethodShouldThrowExceptionIfTheObjectWasNotFoundTest(){
+        InvoiceDaoImpl invoices = new InvoiceDaoImpl();
+        Invoice invoiceOne = new Invoice(0, 0, "10000/FVT/19", 81.30, 23,  "Bez zaliczki");
 
+        invoices.update(invoiceOne,0);
+    }
+
+    @Test
+    public void invoiceDaoImplUpdateMethodShouldUpdateValueOfObjectInCollection(){
+        InvoiceDaoImpl invoices = new InvoiceDaoImpl();
+        Invoice invoiceOne = new Invoice(0, 0, "10000/FVT/19", 81.30, 23,  "Bez zaliczki");
+        Invoice invoiceTwo = new Invoice(1, 1, "10001/FVT/19", 81.30, 23,  "Bez zaliczki");
+        invoices.create(invoiceOne);
+        invoices.update(invoiceTwo,0);
+
+        assertEquals("The method did not update the record ID in the collection!",invoiceTwo.getId(),invoices.get(0).getId());
+        assertEquals("The method did not update the record IdKht in the collection!",invoiceTwo.getIdKht(),invoices.get(0).getIdKht());
+        assertEquals("The method did not update the record InvoiceNumber in the collection!",invoiceTwo.getInvoiceNumber(),invoices.get(0).getInvoiceNumber());
+        assertEquals(invoiceTwo.getNetto(),invoices.get(0).getNetto(),0.01);
+        assertEquals(invoiceTwo.getBrutto(),invoices.get(0).getBrutto(),0.01);
+        assertEquals(invoiceTwo.getVat(),invoices.get(0).getVat(),0.01);
+        assertEquals("The method did not update the record VatMark in the collection!",invoiceTwo.getVatMark(),invoices.get(0).getVatMark());
+        assertEquals("The method did not update the record Description in the collection!",invoiceTwo.getDescription(),invoices.get(0).getDescription());
+    }
 
 }
