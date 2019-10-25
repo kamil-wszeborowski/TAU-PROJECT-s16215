@@ -1,5 +1,8 @@
 package pl.edu.pjatk.tau.labone.domain;
 
+import java.time.Clock;
+import java.time.LocalDateTime;
+
 public class Invoice {
     private int id;
     private int idKht;
@@ -9,6 +12,17 @@ public class Invoice {
     private double vat;
     private int vatMark;
     private String description;
+    private LocalDateTime createDate;
+    private LocalDateTime modyficationDate=null;
+    private LocalDateTime lastReadDate=null;
+    private boolean actCreateDate = true;
+    private boolean actModyficationDate = true;
+    private boolean actLastReadDate = true;
+    private Clock clock = Clock.systemDefaultZone();
+
+    public Invoice(){
+
+    }
 
     public Invoice(int id,int idKht, String invoiceNumber,double netto, int vatMark, String description){
         this.id = id;
@@ -34,6 +48,7 @@ public class Invoice {
                 break;
         }
         this.description = description;
+        //this.createDate = new Date();
     }
 
     public int getId() {
@@ -84,6 +99,66 @@ public class Invoice {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public LocalDateTime getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(LocalDateTime createDate) {
+        this.createDate = createDate;
+    }
+
+    public LocalDateTime getModyficationDate() {
+        return modyficationDate;
+    }
+
+    public void setModyficationDate(LocalDateTime modyficationDate) {
+        this.modyficationDate = modyficationDate;
+    }
+
+    public LocalDateTime getLastReadDate() {
+        return lastReadDate;
+    }
+
+    public void setLastReadDate() {
+        if(actLastReadDate==true){
+            this.lastReadDate = LocalDateTime.now(clock);
+        }
+
+    }
+
+    public boolean isActCreateDate() {
+        return actCreateDate;
+    }
+
+    public void setActCreateDate(boolean actCreateDate) {
+        this.actCreateDate = actCreateDate;
+    }
+
+    public boolean isActModyficationDate() {
+        return actModyficationDate;
+    }
+
+    public void setActModyficationDate(boolean actModyficationDate) {
+        this.actModyficationDate = actModyficationDate;
+    }
+
+    public boolean isActLastReadDate() {
+        return actLastReadDate;
+    }
+
+    public void setActLastReadDate(boolean actLastReadDate) {
+        this.actLastReadDate = actLastReadDate;
+    }
+
+    public Clock getClock() {
+        return clock;
+    }
+
+    public void setClock(Clock clock) {
+        this.clock = clock;
+    }
+
 
 }
 
