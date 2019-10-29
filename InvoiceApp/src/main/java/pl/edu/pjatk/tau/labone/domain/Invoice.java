@@ -24,8 +24,7 @@ public class Invoice {
 
     }
 
-    public Invoice(int id,int idKht, String invoiceNumber,double netto, int vatMark, String description){
-        this.id = id;
+    public Invoice(int idKht, String invoiceNumber,double netto, int vatMark, String description){
         this.idKht = idKht;
         this.invoiceNumber = invoiceNumber;
         this.netto = netto;
@@ -104,8 +103,10 @@ public class Invoice {
         return createDate;
     }
 
-    public void setCreateDate(LocalDateTime createDate) {
-        this.createDate = createDate;
+    public void setCreateDate() {
+        if(actCreateDate==true) {
+            this.createDate = LocalDateTime.now(clock);
+        }
     }
 
     public LocalDateTime getModyficationDate() {

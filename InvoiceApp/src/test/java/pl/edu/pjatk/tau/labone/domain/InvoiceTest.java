@@ -10,7 +10,7 @@ public class InvoiceTest extends TestCase {
 
     @Test
     public void invoiceIsImplementedTest() {
-        assertNotNull(new Invoice(1,1,"10001/FVT/19",81.30, 23, "Tylko przegląd"));
+        assertNotNull(new Invoice(1,"10001/FVT/19",81.30, 23, "Tylko przegląd"));
     }
 
 }

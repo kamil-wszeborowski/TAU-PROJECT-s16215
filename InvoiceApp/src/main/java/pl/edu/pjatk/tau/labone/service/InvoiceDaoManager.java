@@ -11,7 +11,9 @@ public interface InvoiceDaoManager<T> {
 
     Integer create(T t);
 
-    void update(T t, int id);
+    Integer update(T t, int id);
 
     void delete(T t);
+
+    void deleteAll();
 }

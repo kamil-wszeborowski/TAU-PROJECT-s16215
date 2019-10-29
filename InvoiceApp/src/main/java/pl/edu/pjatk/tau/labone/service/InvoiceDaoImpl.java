@@ -18,6 +18,8 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     private static List<Invoice> invoices = new ArrayList<>();
 
+    private static Integer idCounter = 0;
+
     private final static LocalDate LOCAL_DATE = LocalDate.of(2012, 12, 21);
 
     @InjectMocks
@@ -45,6 +47,8 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     }
 */
+
+
     @Override
     public Invoice get(int idList) {
         try{
@@ -61,29 +65,28 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     @Override
     public List<Invoice> getAll(){
+        List<Invoice> invoiceList = invoices;
+        invoiceList.forEach(Invoice::setLastReadDate);
         return invoices;
     };
 
     @Override
     public Integer create(Invoice invoice){
-        boolean checkID = true;
-        for(Invoice item : invoices){
-            if(item.getId() == invoice.getId()){
-                checkID = false;
-                throw new IllegalArgumentException("Something go wrong! In the database already exists record with id:"+invoice.getId());
-            }
+        int id = generateId();
+        invoice.setId(id);
+        if(findWithID(invoice.getId()).isPresent()){
+            throw new IllegalArgumentException("Something go wrong! In the database already exists record with id:"+invoice.getId());
         }
-        if(checkID = true){
-            invoices.add(invoice);
-            return invoice.getId();
-        }
-        return null;
+        invoice.setCreateDate();
+        invoices.add(invoice);
+        return invoice.getId();
+
     };
 
     @Override
-    public void update(Invoice invoice, int idList){
+    public Integer update(Invoice invoice, int idList){
         if(!invoices.get(idList).equals(null)) {
-            invoices.get(idList).setId(invoice.getId());
+            //invoices.get(idList).setId(invoice.getId());
             invoices.get(idList).setIdKht(invoice.getIdKht());
             invoices.get(idList).setInvoiceNumber(invoice.getInvoiceNumber());
             invoices.get(idList).setNetto(invoice.getNetto());
@@ -91,6 +94,7 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
             invoices.get(idList).setVat(invoice.getVat());
             invoices.get(idList).setVatMark(invoice.getVatMark());
             invoices.get(idList).setDescription(invoice.getDescription());
+            return invoices.get(idList).getId();
         }else {
             throw new IndexOutOfBoundsException("Something go wrong! In the database not found record with id:" + idList);
         }
@@ -107,15 +111,18 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     };
 
+    private Integer generateId(){
+        return idCounter++;
+    }
+
     private Optional<Invoice> findWithID(Integer id){
-        return invoices.stream()
-                .filter(i -> i.getId()==(id))
-                .findFirst();
+        return invoices.stream().filter(i -> i.getId()==(id)).findFirst();
     }
 
-    private boolean movieExists(Invoice invoice) {
-
-        return findWithID(invoice.getId()).isPresent();
+    public void deleteAll(){
+        invoices.clear();
+        idCounter = 0;
     }
+
 
 }
