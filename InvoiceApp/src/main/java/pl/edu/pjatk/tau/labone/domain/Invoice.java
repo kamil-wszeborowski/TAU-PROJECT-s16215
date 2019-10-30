@@ -113,8 +113,10 @@ public class Invoice {
         return modyficationDate;
     }
 
-    public void setModyficationDate(LocalDateTime modyficationDate) {
-        this.modyficationDate = modyficationDate;
+    public void setModyficationDate() {
+        if(actLastReadDate==true){
+            this.modyficationDate = LocalDateTime.now(clock);
+        }
     }
 
     public LocalDateTime getLastReadDate() {

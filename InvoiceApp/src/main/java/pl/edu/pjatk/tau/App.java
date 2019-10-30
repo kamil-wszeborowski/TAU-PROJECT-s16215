@@ -5,16 +5,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        /*
-        InvoiceDaoManager invoiceDao = new InvoiceDaoImpl();
-        Invoice invoiceOne = new Invoice( 0, "10000/FVT/19", 81.30, 23,  "Bez zaliczki");
-        Invoice invoiceTwo = new Invoice( 0, "10000/FVT/19", 81.30, 23,  "Bez zaliczki");
-        invoiceDao.create(invoiceOne);
-        invoiceDao.create(invoiceTwo);
-        for(Invoice item : (List<Invoice>)invoiceDao.getAll()){
-            System.out.println(item.getId()+" "+item.getInvoiceNumber()+" "+ item.getBrutto()+" "+item.getNetto()+" "+ item.getVat()+" "+ item.getDescription()+" "+ item.getCreateDate()+" "+ item.getLastReadDate());
-        }
 
+    /*
         System.out.println( "Poniżej lista dokumentów sprzedaży:" );
         InvoiceDaoManager invoiceDao = new InvoiceDaoImpl();
 

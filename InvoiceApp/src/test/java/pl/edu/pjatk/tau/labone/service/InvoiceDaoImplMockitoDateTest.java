@@ -32,11 +32,11 @@ public class InvoiceDaoImplMockitoDateTest {
     private Clock clock;
 
     private final static LocalDateTime STATIC_TIME_CREATE =
-            LocalDateTime.of(2012,12,21, 21, 21, 21, 0);
+            LocalDateTime.of(2016,6,16, 16, 16, 16, 0);
     private final static LocalDateTime STATIC_TIME_LAST_READ =
-            LocalDateTime.of(2019,01,12, 21, 0, 0, 0);
+            LocalDateTime.of(2019,9,19, 19, 19, 19, 0);
     private final static LocalDateTime STATIC_TIME_MODYFICATION =
-            LocalDateTime.of(2012,12,21, 21, 21, 21, 0);
+            LocalDateTime.of(2016,6,16, 16, 16, 16, 0);
 
     private void mockTime(LocalDateTime staticTime) {
         Clock fixedClock = Clock.fixed(staticTime.atZone(ZoneId.systemDefault()).toInstant(), ZoneId.systemDefault());
@@ -154,6 +154,29 @@ public class InvoiceDaoImplMockitoDateTest {
         assertEquals(STATIC_TIME_MODYFICATION,getInvoice.getModyficationDate());
     }
 
+    @Test
+    public void setAllDateValueWhenAllActIsTrueTest(){
+        mockTime(STATIC_TIME_CREATE);
+        mockTime(STATIC_TIME_MODYFICATION);
 
+        firstTestInvoice.setActCreateDate(true);
+        firstTestInvoice.setActModyficationDate(true);
+        firstTestInvoice.setActLastReadDate(true);
+
+        Integer idFirst = invoiceDao.create(firstTestInvoice);
+        Integer idOnList = invoiceDao.update(secondTestInvoice,idFirst);
+        Invoice getInvoice = invoiceDao.get(idOnList);
+
+        assertEquals(STATIC_TIME_CREATE,getInvoice.getCreateDate());
+        assertEquals(STATIC_TIME_MODYFICATION,getInvoice.getModyficationDate());
+
+
+        mockTime(STATIC_TIME_LAST_READ);
+
+        Integer idSecond = invoiceDao.create(secondTestInvoice);
+        Invoice getSecondInvoice = invoiceDao.get(idSecond);
+
+        assertEquals(STATIC_TIME_LAST_READ,getSecondInvoice.getLastReadDate());
+    }
 
 }

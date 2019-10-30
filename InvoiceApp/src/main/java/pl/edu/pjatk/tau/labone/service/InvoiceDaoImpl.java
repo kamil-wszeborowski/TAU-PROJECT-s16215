@@ -20,7 +20,7 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     private static Integer idCounter = 0;
 
-    private final static LocalDate LOCAL_DATE = LocalDate.of(2012, 12, 21);
+    private final static LocalDate LOCAL_DATE = LocalDate.of(2016, 6, 16);
 
     @InjectMocks
     private Invoice invoice;
@@ -94,6 +94,7 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
             invoices.get(idList).setVat(invoice.getVat());
             invoices.get(idList).setVatMark(invoice.getVatMark());
             invoices.get(idList).setDescription(invoice.getDescription());
+            invoices.get(idList).setModyficationDate();
             return invoices.get(idList).getId();
         }else {
             throw new IndexOutOfBoundsException("Something go wrong! In the database not found record with id:" + idList);
