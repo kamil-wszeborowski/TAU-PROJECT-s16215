@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a80adc9e-d137-405c-b1d9-3eacc29d1b9d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/InvoiceApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InvoiceApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/pjatk/tau/labone/service/InvoiceDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/pjatk/tau/labone/service/InvoiceDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/InvoiceApp.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/pjatk/tau/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/pjatk/tau/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/pjatk/tau/labone/service/InvoiceDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/pjatk/tau/labone/service/InvoiceDaoImpl.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1RpArJy9HrRhBOBsJ16aikxPgkR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/pl.edu.pjatk.tau/labthree/jbehave" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.edu.pjatk.tau.labone.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\STUDIA\7_semestr\TAU\PROJEKTY_TAU\TAU-PROJECT-s16215\InvoiceApp\src\test\resources\pl.edu.pjatk.tau\labthree\jbehave" />
+      <recent name="D:\STUDIA\7_semestr\TAU\PROJEKTY_TAU\TAU-PROJECT-s16215\InvoiceApp\src\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\STUDIA\7_semestr\TAU\PROJEKTY_TAU\TAU-PROJECT-s16215\InvoiceApp\src\test\resources\pl\edu\pjatk\tau\tabthree\jbehave" />
+      <recent name="D:\STUDIA\7_semestr\TAU\PROJEKTY_TAU\TAU-PROJECT-s16215\InvoiceApp\src\test\resources\pl.edu.pjatk.tau\labthree\jbehave" />
+      <recent name="D:\STUDIA\7_semestr\TAU\PROJEKTY_TAU\TAU-PROJECT-s16215\InvoiceApp\src\test\resources\pl.edu.pjatk.tau" />
+      <recent name="D:\STUDIA\7_semestr\TAU\PROJEKTY_TAU\TAU-PROJECT-s16215\InvoiceApp\src\test\java\pl\edu\pjatk\tau\labthree\resources" />
+      <recent name="D:\STUDIA\7_semestr\TAU\PROJEKTY_TAU\TAU-PROJECT-s16215\InvoiceApp\src\test\resources\com\example\jbehavedemo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RegularExpressionFindTest">
+    <configuration name="InvoiceDaoImplMockitoDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InvoiceApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pjatk.tau.labone.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pjatk.tau.labone.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjatk.tau.labone.service.InvoiceDaoImplMockitoDateTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvoiceDaoImplMockitoDateTest.setAllDateValueWhenAllActIsTrueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InvoiceApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pjatk.tau.labone.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pjatk.tau.labone.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjatk.tau.labone.service.InvoiceDaoImplMockitoDateTest" />
+      <option name="METHOD_NAME" value="setAllDateValueWhenAllActIsTrueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvoiceDaoImplMockitoDateTest.setModyficationDateWhenActWasFalseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InvoiceApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pjatk.tau.labone.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pjatk.tau.labone.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjatk.tau.labone.service.InvoiceDaoImplMockitoDateTest" />
+      <option name="METHOD_NAME" value="setModyficationDateWhenActWasFalseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvoiceDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InvoiceApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pjatk.tau.labone.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pjatk.tau.labone.service" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjatk.tau.labone.service.InvoiceDaoImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegularExpressionFindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InvoiceApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pjatk.tau.labthree.jbehave.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pjatk.tau.labthree.jbehave" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pjatk.tau.labthree.jbehave.RegularExpressionFindTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RegularExpressionFindTest" />
+        <item itemvalue="JUnit.InvoiceDaoImplMockitoDateTest" />
+        <item itemvalue="JUnit.InvoiceDaoImplTest" />
+        <item itemvalue="JUnit.InvoiceDaoImplMockitoDateTest.setAllDateValueWhenAllActIsTrueTest" />
+        <item itemvalue="JUnit.InvoiceDaoImplMockitoDateTest.setModyficationDateWhenActWasFalseTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a80adc9e-d137-405c-b1d9-3eacc29d1b9d" name="Default Changelist" comment="" />
+      <created>1570353860342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570353860342</updated>
+      <workItem from="1570353863732" duration="3704000" />
+      <workItem from="1570430155343" duration="2624000" />
+      <workItem from="1570531772779" duration="14235000" />
+      <workItem from="1570611448451" duration="16378000" />
+      <workItem from="1570695348894" duration="15648000" />
+      <workItem from="1570775000409" duration="11029000" />
+      <workItem from="1570872488066" duration="9273000" />
+      <workItem from="1570959907174" duration="6566000" />
+      <workItem from="1571557725615" duration="6695000" />
+      <workItem from="1571821423539" duration="17436000" />
+      <workItem from="1571896401921" duration="11707000" />
+      <workItem from="1571984636763" duration="10009000" />
+      <workItem from="1572032358257" duration="7919000" />
+      <workItem from="1572080410941" duration="614000" />
+      <workItem from="1572171981617" duration="2898000" />
+      <workItem from="1572250901249" duration="17603000" />
+      <workItem from="1572330622838" duration="12289000" />
+      <workItem from="1572429576109" duration="4955000" />
+      <workItem from="1572771090324" duration="2153000" />
+      <workItem from="1572775090998" duration="3406000" />
+      <workItem from="1573066158981" duration="2170000" />
+      <workItem from="1573144209781" duration="7375000" />
+      <workItem from="1573197543494" duration="3228000" />
+      <workItem from="1573210454743" duration="6168000" />
+      <workItem from="1573298184407" duration="1000000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

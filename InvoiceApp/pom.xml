@@ -24,11 +24,24 @@
       <version>1.10.19</version>
       <!--<scope>test</scope>-->
     </dependency>
-      <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>4.12</version>
-          <scope>compile</scope>
-      </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jbehave/jbehave-gherkin
+    <dependency>
+      <groupId>org.jbehave</groupId>
+      <artifactId>jbehave-gherkin</artifactId>
+      <version>4.6</version>
+    </dependency>-->
+
+    <dependency>
+      <groupId>org.jbehave</groupId>
+      <artifactId>jbehave-core</artifactId>
+      <version>4.0.5</version>
+    </dependency>
+
   </dependencies>
 </project>

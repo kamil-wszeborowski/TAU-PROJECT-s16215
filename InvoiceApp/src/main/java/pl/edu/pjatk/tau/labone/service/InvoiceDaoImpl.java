@@ -11,6 +11,8 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.mockito.Mockito.doReturn;
 
@@ -19,6 +21,7 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
     private static List<Invoice> invoices = new ArrayList<>();
 
     private static Integer idCounter = 0;
+    public static String number;
 
     private final static LocalDate LOCAL_DATE = LocalDate.of(2016, 6, 16);
 
@@ -36,18 +39,6 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
         doReturn(fixedClock.instant()).when(clock).instant();
         doReturn(fixedClock.getZone()).when(clock).getZone();
     }
-
-
- /*
-    public InvoiceDaoImpl(){
-
-        invoices.add(new Invoice(0, 0, "10000/FVT/19", 81.30, 23, "Tylko przegląd"));
-        invoices.add(new Invoice(1, 1, "10001/FVT/19", 81.30, 8,"Zaliczka wliczona w cene"));
-        invoices.add(new Invoice(2, 3, "10002/FVT/19", 81.30, 5,"Bez zaliczki"));
-
-    }
-*/
-
 
     @Override
     public Invoice get(int idList) {
@@ -125,5 +116,17 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
         idCounter = 0;
     }
 
+    public String findByRegularExpresion(){
+        String numberFound="No invoice with this number found";
+        Pattern compliedPattern = Pattern.compile(number);
 
+        for (Invoice invoice: invoices) {
+            Matcher matcher = compliedPattern.matcher(invoice.getInvoiceNumber());
+            if(matcher.matches()==true){
+                numberFound = invoice.getInvoiceNumber();
+            }
+        }
+
+        return numberFound;
+    }
 }
