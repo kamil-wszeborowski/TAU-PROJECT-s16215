@@ -22,6 +22,7 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     private static Integer idCounter = 0;
     public static String number;
+    public static String listOfNumber;
 
     private final static LocalDate LOCAL_DATE = LocalDate.of(2016, 6, 16);
 
@@ -126,7 +127,50 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
                 numberFound = invoice.getInvoiceNumber();
             }
         }
-
         return numberFound;
+    }
+
+    public Integer findIdOfInvoiceNumber(String searchedNumber){
+        int idFound = -1;
+        Pattern compliedPattern = Pattern.compile(searchedNumber);
+
+        for (Invoice invoice: invoices) {
+            Matcher matcher = compliedPattern.matcher(invoice.getInvoiceNumber());
+            //System.out.println("For: "+invoice.getInvoiceNumber()+" id: "+invoice.getId());
+            if(matcher.matches()==true){
+                idFound = invoice.getId();
+            }
+        }
+        return idFound;
+    }
+
+    public String deleteListOfInvoices(){
+        String deletedInvoicesNumber = "";
+        String numberFromInvoice ;
+        int idOfInvoice;
+
+        List<Invoice> listToDelete = new ArrayList<>();
+
+        String[] parts = listOfNumber.split(",");
+
+        for(int i=0;i<parts.length;i++){
+            numberFromInvoice = parts[i];
+            idOfInvoice = findIdOfInvoiceNumber(numberFromInvoice);
+            if(idOfInvoice != -1){
+                deletedInvoicesNumber += numberFromInvoice+",";
+                listToDelete.add(get(idOfInvoice));
+                //delete(get(idOfInvoice));
+            }
+        }
+
+        for(int i=0;i<listToDelete.size();i++){
+            delete(listToDelete.get(i));
+        }
+
+        if(deletedInvoicesNumber == ""){
+            deletedInvoicesNumber = "No invoice number was found";
+        }
+
+        return deletedInvoicesNumber;
     }
 }

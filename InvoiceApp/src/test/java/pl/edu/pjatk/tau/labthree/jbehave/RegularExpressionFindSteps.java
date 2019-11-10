@@ -11,7 +11,6 @@ import static org.junit.Assert.assertEquals;
 public class RegularExpressionFindSteps {
 
     private InvoiceDaoImpl invoiceDao;
-   // private String number;
 
     @Given("List of invoices")
     public void invoiceFindSetup(){
@@ -27,10 +26,10 @@ public class RegularExpressionFindSteps {
         invoiceDao.number = number;
     }
 
-    @Then("find method should return searched invoice $number")
-    public void shouldGetInvoiceId(String number){
+    @Then("find method should return $searchedNumber")
+    public void shouldGetInvoiceId(String searchedNumber){
         String numberFound = invoiceDao.findByRegularExpresion();
-        assertEquals(number, numberFound);
+        assertEquals(searchedNumber, numberFound);
     }
 
 
