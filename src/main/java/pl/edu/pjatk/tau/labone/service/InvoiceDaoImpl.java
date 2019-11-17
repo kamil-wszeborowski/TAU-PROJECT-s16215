@@ -46,7 +46,6 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
         try{
             Optional<Invoice> invoice = findWithID(idList);
             invoice.ifPresent(Invoice::setLastReadDate);
-            //invoices.get(idList).setLastReadDate(new Date());
             return invoices.get(idList);
         }
         catch (Exception e) {
@@ -78,7 +77,6 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
     @Override
     public Integer update(Invoice invoice, int idList){
         if(!invoices.get(idList).equals(null)) {
-            //invoices.get(idList).setId(invoice.getId());
             invoices.get(idList).setIdKht(invoice.getIdKht());
             invoices.get(idList).setInvoiceNumber(invoice.getInvoiceNumber());
             invoices.get(idList).setNetto(invoice.getNetto());
@@ -136,7 +134,6 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
         for (Invoice invoice: invoices) {
             Matcher matcher = compliedPattern.matcher(invoice.getInvoiceNumber());
-            //System.out.println("For: "+invoice.getInvoiceNumber()+" id: "+invoice.getId());
             if(matcher.matches()==true){
                 idFound = invoice.getId();
             }
@@ -159,7 +156,6 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
             if(idOfInvoice != -1){
                 deletedInvoicesNumber += numberFromInvoice+",";
                 listToDelete.add(get(idOfInvoice));
-                //delete(get(idOfInvoice));
             }
         }
 

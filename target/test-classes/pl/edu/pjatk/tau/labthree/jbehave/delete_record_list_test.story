@@ -14,3 +14,4 @@ Examples:
       | listOfNumber                           | invoicesThatShouldBeRemoved             |
       | 10000/FVT/19,10001/FVT/19,10002/FVT/19 | 10000/FVT/19,10001/FVT/19,10002/FVT/19, |
       | 10005/FVT/19                           | No invoice number was found             |
+      | 10000/FVT/19                           | 10000/FVT/19,                           |

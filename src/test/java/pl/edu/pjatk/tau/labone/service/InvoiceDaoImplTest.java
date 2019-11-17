@@ -33,13 +33,11 @@ public class InvoiceDaoImplTest {
     @Test
     public void invoiceDaoImplInvoicesListIsImplementedTest() {
         assertNotNull(invoiceDao);
-        //assertNotNull(new InvoiceDaoImpl());
     }
 
     @Test (expected = IndexOutOfBoundsException.class)
     public void invoiceDaoImplGetMethodShouldThrowExeptionOnEmptyCollectionTest(){
         invoiceDao.get(0);
-        //new InvoiceDaoImpl().get(0);
     }
 
     @Test (expected = IllegalArgumentException.class)

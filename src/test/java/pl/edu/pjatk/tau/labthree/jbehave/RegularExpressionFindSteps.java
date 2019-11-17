@@ -17,8 +17,10 @@ public class RegularExpressionFindSteps {
         this.invoiceDao = new InvoiceDaoImpl();
         Invoice invoiceOne = new Invoice( 0, "10000/FVT/19", 81.30, 23,  "Bez zaliczki");
         Invoice invoiceTwo = new Invoice( 1, "10001/FVT/19", 81.30, 23,  "Wymiana oleju");
+        Invoice invoiceThree = new Invoice( 2, "10002/FVT/19", 81.30, 23,  "Wymiana oleju");
         this.invoiceDao.create(invoiceOne);
         this.invoiceDao.create(invoiceTwo);
+        this.invoiceDao.create(invoiceThree);
     }
 
     @When("set the invoice number to $number as the searched phrase")

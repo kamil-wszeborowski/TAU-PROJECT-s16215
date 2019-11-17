@@ -13,4 +13,5 @@ Examples:
       | number       | result                            |
       | 10000/FVT/19 | 10000/FVT/19                      |
       | 10001/FVT/19 | 10001/FVT/19                      |
-      | 10002/FVT/19 | No invoice with this number found |
+      | 10006/FVT/19 | No invoice with this number found |
+      | 10002/FVT/19 | 10002/FVT/19                      |

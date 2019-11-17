@@ -47,7 +47,6 @@ public class Invoice {
                 break;
         }
         this.description = description;
-        //this.createDate = new Date();
     }
 
     public int getId() {
