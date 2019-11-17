@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TAU-PROJECT-s16215.iml" filepath="$PROJECT_DIR$/.idea/TAU-PROJECT-s16215.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InvoiceApp.iml" filepath="$PROJECT_DIR$/InvoiceApp.iml" />
     </modules>
   </component>
 </project>
