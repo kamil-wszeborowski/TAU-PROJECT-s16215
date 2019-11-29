@@ -1,0 +1,12 @@
+idKht;invoiceNumber;netto;brutto;vat;vatMark;description
+0;10000/FVT/19;81.3;100;18.7;23;Faktura bez zaliczki
+1;10001/FVT/19;97.56;120;22.44;23;Przeglad
+2;10002/FVT/19;406.5;500;93.5;23;Zaliczka na samochod
+3;10003/FVT/19;650.41;800;149.59;23;Naprawa sprzegla
+4;10004/FVT/19;300;300;0;0;Sprzedaz zagraniczna
+5;10005/FVT/19;81.3;100;18.7;23;Wymiana oleju
+6;10006/FVT/19;20000;20000;0;0;Sprzedaz zagraniczna samochod
+7;10007/FVT/19;325.2;400;74.8;23;Czesci
+8;10008/FVT/19;81.3;100;18.7;23;Wymiana oleju
+9;10009/FVT/19;36.59;45;8.41;23;Naprawa
+10;100010/FVT/19;70.09;75;4.91;7;Czesci zagraniczne

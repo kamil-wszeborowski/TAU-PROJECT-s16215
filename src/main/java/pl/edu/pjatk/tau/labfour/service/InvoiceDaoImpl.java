@@ -8,19 +8,12 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @Service
 public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     private Connection connection;
     private static List<Invoice> invoices = new ArrayList<>();
-
-    private static Integer idCounter = 0;
-    public static String number;
-    public static String listOfNumber;
 
     private PreparedStatement addInvoiceStmt;
     private PreparedStatement getAllInvoicesStmt;
@@ -143,16 +136,17 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
     }
 
     @Override
-    public Integer update(Invoice invoice) throws SQLException{
+    public Integer update(Integer id,Invoice invoice) throws SQLException{
         int count = 0;
         try {
             updateInvoiceStmt.setInt(1, invoice.getIdKht());
             updateInvoiceStmt.setString(2, invoice.getInvoiceNumber());
             updateInvoiceStmt.setDouble(3, invoice.getNetto());
-            updateInvoiceStmt.setDouble(3, invoice.getBrutto());
-            updateInvoiceStmt.setDouble(3, invoice.getVat());
-            updateInvoiceStmt.setInt(3, invoice.getVatMark());
-            updateInvoiceStmt.setString(3, invoice.getDescription());
+            updateInvoiceStmt.setDouble(4, invoice.getBrutto());
+            updateInvoiceStmt.setDouble(5, invoice.getVat());
+            updateInvoiceStmt.setInt(6, invoice.getVatMark());
+            updateInvoiceStmt.setString(7, invoice.getDescription());
+            updateInvoiceStmt.setInt( 8,id);
             count = updateInvoiceStmt.executeUpdate();
         } catch (SQLException e) {
             throw new IllegalStateException(e.getMessage() + "\n" + e.getStackTrace().toString());
@@ -164,90 +158,44 @@ public class InvoiceDaoImpl implements InvoiceDaoManager<Invoice> {
 
     @Override
     public List<Invoice> getAll(){
-        List<Invoice> invoiceList = invoices;
-        invoiceList.forEach(Invoice::setLastReadDate);
-        return invoices;
+        List<Invoice> invoices = new LinkedList<>();
+        try {
+            ResultSet rs = getAllInvoicesStmt.executeQuery();
+            while (rs.next()) {
+                Invoice i = new Invoice();
+                i.setId(rs.getInt("id"));
+                i.setIdKht(rs.getInt("idKht"));
+                i.setInvoiceNumber(rs.getString("invoiceNumber"));
+                i.setNetto(rs.getDouble("netto"));
+                i.setBrutto(rs.getDouble("brutto"));
+                i.setVat(rs.getDouble("vat"));
+                i.setVatMark(rs.getInt("vatMark"));
+                i.setDescription(rs.getString("description"));
 
+                invoices.add(i);
+            }
+
+        } catch (SQLException e) {
+            throw new IllegalStateException(e.getMessage() + "\n" + e.getStackTrace().toString());
+        }
+        return invoices;
 
     };
 
     @Override
-    public void delete(Invoice invoice){
-        boolean remove = false;
-        remove = invoices.remove(invoice);
-
-        if(remove == false){
-            throw new IndexOutOfBoundsException("Something go wrong! In the database not found record with id:" + invoice.getId());
+    public Integer delete(Invoice invoice){
+        try {
+            deleteInvoiceStmt.setLong(1, invoice.getId());
+            return deleteInvoiceStmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new IllegalStateException(e.getMessage() + "\n" + e.getStackTrace().toString());
         }
 
     };
 
-    private Integer generateId(){
-        return idCounter++;
-    }
-
-    private Optional<Invoice> findWithID(Integer id){
-        return invoices.stream().filter(i -> i.getId()==(id)).findFirst();
-    }
-
     public void deleteAll(){
         invoices.clear();
-        idCounter = 0;
     }
 
-    public String findByRegularExpresion(){
-        String numberFound="No invoice with this number found";
-        Pattern compliedPattern = Pattern.compile(number);
 
-        for (Invoice invoice: invoices) {
-            Matcher matcher = compliedPattern.matcher(invoice.getInvoiceNumber());
-            if(matcher.matches()==true){
-                numberFound = invoice.getInvoiceNumber();
-            }
-        }
-        return numberFound;
-    }
-
-    public Integer findIdOfInvoiceNumber(String searchedNumber){
-        int idFound = -1;
-        Pattern compliedPattern = Pattern.compile(searchedNumber);
-
-        for (Invoice invoice: invoices) {
-            Matcher matcher = compliedPattern.matcher(invoice.getInvoiceNumber());
-            if(matcher.matches()==true){
-                idFound = invoice.getId();
-            }
-        }
-        return idFound;
-    }
-/*
-    public String deleteListOfInvoices(){
-        String deletedInvoicesNumber = "";
-        String numberFromInvoice ;
-        int idOfInvoice;
-
-        List<Invoice> listToDelete = new ArrayList<>();
-
-        String[] parts = listOfNumber.split(",");
-
-        for(int i=0;i<parts.length;i++){
-            numberFromInvoice = parts[i];
-            idOfInvoice = findIdOfInvoiceNumber(numberFromInvoice);
-            if(idOfInvoice != -1){
-                deletedInvoicesNumber += numberFromInvoice+",";
-                listToDelete.add(get(idOfInvoice));
-            }
-        }
-
-        for(int i=0;i<listToDelete.size();i++){
-            delete(listToDelete.get(i));
-        }
-
-        if(deletedInvoicesNumber == ""){
-            deletedInvoicesNumber = "No invoice number was found";
-        }
-
-        return deletedInvoicesNumber;
-    }
- */
 }

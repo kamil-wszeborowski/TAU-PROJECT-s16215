@@ -7,6 +7,8 @@ import pl.edu.pjatk.tau.labfour.domain.Invoice;
 import pl.edu.pjatk.tau.labfour.service.InvoiceDaoImpl;
 
 import java.sql.SQLException;
+import java.util.LinkedList;
+import java.util.List;
 
 @RestController
 public class InvoiceApi {
@@ -41,4 +43,31 @@ public class InvoiceApi {
         return invoiceDaoImpl.get(id);
     }
 
+    // Update
+    @PutMapping (value = "/invoice/{id}",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public int updateFramework(@PathVariable("id") Integer id,@RequestBody Invoice i ) throws SQLException {
+        return invoiceDaoImpl.update(id,i);
+    }
+
+    @RequestMapping(value = "/invoices", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public List<Invoice> getAll(@RequestParam(value = "filter", required = false) String f) throws SQLException {
+        List<Invoice> invoices = new LinkedList<Invoice>();
+        for (Invoice i : invoiceDaoImpl.getAll()) {
+            if (f == null) {
+                invoices.add(i);
+            } else if (i.getInvoiceNumber().contains(f)) {
+                invoices.add(i);
+            }
+        }
+        return invoices;
+    }
+
+    @RequestMapping(value = "/invoice/{id}", method = RequestMethod.DELETE)
+    @ResponseBody
+    public Integer delete(@PathVariable("id") Integer id) throws SQLException {
+        return new Integer(invoiceDaoImpl.delete(invoiceDaoImpl.get(id)));
+    }
 }

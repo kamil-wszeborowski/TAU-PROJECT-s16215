@@ -12,9 +12,9 @@ public interface InvoiceDaoManager<T> {
 
     Integer create(T t);
 
-    Integer update(T t) throws SQLException;
+    Integer update(Integer id,T t) throws SQLException;
 
-    void delete(T t);
+    Integer delete(T t);
 
     void deleteAll();
 
