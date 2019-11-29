@@ -16,4 +16,7 @@ public interface InvoiceDaoManager<T> {
     void delete(T t);
 
     void deleteAll();
+
+  //  public Connection getConnection();
+  //  public void setConnection(Connection connection) throws Exception;
 }
