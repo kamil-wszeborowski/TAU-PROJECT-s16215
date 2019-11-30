@@ -1,0 +1,167 @@
+1575157643169,17,createInvoice,200,OK,Settings 1-1,text,true,,33488,360,1,1,http://localhost:8080/api/invoice,15,0,4
+1575157643189,6,createInvoice,200,OK,Settings 1-1,text,true,,33478,350,1,1,http://localhost:8080/api/invoice,6,0,0
+1575157643196,4,createInvoice,200,OK,Settings 1-1,text,true,,33489,361,1,1,http://localhost:8080/api/invoice,4,0,0
+1575157643201,5,createInvoice,200,OK,Settings 1-1,text,true,,33488,360,1,1,http://localhost:8080/api/invoice,5,0,0
+1575157643206,5,createInvoice,200,OK,Settings 1-1,text,true,,33487,355,1,1,http://localhost:8080/api/invoice,4,0,0
+1575157643211,5,createInvoice,200,OK,Settings 1-1,text,true,,33481,353,1,1,http://localhost:8080/api/invoice,5,0,0
+1575157643217,5,createInvoice,200,OK,Settings 1-1,text,true,,33500,368,1,1,http://localhost:8080/api/invoice,5,0,0
+1575157643223,4,createInvoice,200,OK,Settings 1-1,text,true,,33475,347,1,1,http://localhost:8080/api/invoice,4,0,0
+1575157643228,4,createInvoice,200,OK,Settings 1-1,text,true,,33481,353,1,1,http://localhost:8080/api/invoice,4,0,0
+1575157643232,5,createInvoice,200,OK,Settings 1-1,text,true,,33475,347,1,1,http://localhost:8080/api/invoice,5,0,0
+1575157643237,4,createInvoice,200,OK,Settings 1-1,text,true,,33487,359,1,1,http://localhost:8080/api/invoice,4,0,0
+1575157643532,245,selectAllInvoices,200,OK,Thread Group 1-1,text,true,,394,0,1,1,null,245,0,244
+1575157643779,6,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/13,6,0,1
+1575157643785,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/15,4,0,0
+1575157643790,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/17,3,0,0
+1575157643794,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/19,3,0,0
+1575157643798,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/20,4,0,0
+1575157643803,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/21,4,0,0
+1575157643808,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/22,3,0,0
+1575157643812,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33477,133,1,1,http://localhost:8080/api/invoice/23,3,0,0
+1575157643816,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/24,3,0,0
+1575157643820,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/25,3,0,0
+1575157643824,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/26,4,0,0
+1575157643829,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/27,3,0,0
+1575157643833,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/28,4,0,0
+1575157643838,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/29,3,0,0
+1575157643842,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/30,3,0,0
+1575157643845,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/31,4,0,0
+1575157643849,5,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/32,4,0,0
+1575157643854,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/33,3,0,0
+1575157643858,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33477,133,1,1,http://localhost:8080/api/invoice/34,3,0,0
+1575157643862,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/35,3,0,0
+1575157643865,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/36,4,0,0
+1575157643869,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/37,3,0,0
+1575157643873,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/38,3,0,0
+1575157643876,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/39,3,0,0
+1575157643880,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/40,3,0,0
+1575157643883,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/41,4,0,0
+1575157643887,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/42,3,0,0
+1575157643891,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/43,3,0,0
+1575157643895,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/44,3,0,0
+1575157643898,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33477,133,1,1,http://localhost:8080/api/invoice/45,3,0,0
+1575157643902,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/46,3,0,0
+1575157643906,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/47,3,0,0
+1575157643909,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/48,3,0,0
+1575157643913,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/49,2,0,0
+1575157643916,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/50,3,0,0
+1575157643920,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/51,3,0,0
+1575157643923,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/52,3,0,0
+1575157643927,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/53,3,0,0
+1575157643930,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/54,3,0,0
+1575157643934,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/55,3,0,0
+1575157643938,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33477,133,1,1,http://localhost:8080/api/invoice/56,3,0,0
+1575157643941,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/57,3,0,0
+1575157643945,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/58,3,0,0
+1575157643948,5,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/59,4,0,0
+1575157643953,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/60,3,0,0
+1575157643957,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/61,3,0,0
+1575157643961,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/62,2,0,0
+1575157643964,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/63,3,0,0
+1575157643968,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/64,2,0,0
+1575157643971,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/65,3,0,0
+1575157643975,5,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/66,4,0,0
+1575157643980,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33477,133,1,1,http://localhost:8080/api/invoice/67,4,0,0
+1575157643985,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/68,3,0,0
+1575157643988,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/69,3,0,0
+1575157643992,5,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/70,4,0,0
+1575157643998,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/71,4,0,0
+1575157644002,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/72,4,0,0
+1575157644007,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/73,3,0,0
+1575157644011,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/74,3,0,0
+1575157644015,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/75,3,0,0
+1575157644019,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/76,3,0,0
+1575157644023,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33471,132,1,1,http://localhost:8080/api/invoice/0,3,0,0
+1575157644027,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/77,3,0,0
+1575157644031,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33477,133,1,1,http://localhost:8080/api/invoice/78,3,0,0
+1575157644035,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/79,4,0,0
+1575157644040,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/80,4,0,0
+1575157644045,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/81,3,0,0
+1575157644049,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/82,4,0,0
+1575157644054,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/83,3,0,0
+1575157644058,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/84,3,0,0
+1575157644062,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/85,3,0,0
+1575157644065,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/86,3,0,0
+1575157644069,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/87,3,0,0
+1575157644073,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33471,132,1,1,http://localhost:8080/api/invoice/1,3,0,0
+1575157644076,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/88,4,0,0
+1575157644080,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33477,133,1,1,http://localhost:8080/api/invoice/89,3,0,0
+1575157644084,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,133,1,1,http://localhost:8080/api/invoice/90,3,0,0
+1575157644088,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/91,3,0,0
+1575157644091,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/92,3,0,0
+1575157644095,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/93,4,0,0
+1575157644099,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33499,133,1,1,http://localhost:8080/api/invoice/94,3,0,0
+1575157644103,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/95,3,0,0
+1575157644107,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33480,133,1,1,http://localhost:8080/api/invoice/96,3,0,0
+1575157644110,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33474,133,1,1,http://localhost:8080/api/invoice/97,3,0,0
+1575157644114,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/98,3,0,0
+1575157644117,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33471,132,1,1,http://localhost:8080/api/invoice/2,4,0,0
+1575157644121,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,133,1,1,http://localhost:8080/api/invoice/99,3,0,0
+1575157644125,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33478,134,1,1,http://localhost:8080/api/invoice/100,3,0,0
+1575157644128,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33489,134,1,1,http://localhost:8080/api/invoice/101,4,0,0
+1575157644133,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,134,1,1,http://localhost:8080/api/invoice/102,2,0,0
+1575157644136,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,134,1,1,http://localhost:8080/api/invoice/103,4,0,0
+1575157644140,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33481,134,1,1,http://localhost:8080/api/invoice/104,3,0,0
+1575157644144,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33500,134,1,1,http://localhost:8080/api/invoice/105,3,0,0
+1575157644147,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33475,134,1,1,http://localhost:8080/api/invoice/106,3,0,0
+1575157644151,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33481,134,1,1,http://localhost:8080/api/invoice/107,3,0,0
+1575157644155,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33475,134,1,1,http://localhost:8080/api/invoice/108,3,0,0
+1575157644159,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,134,1,1,http://localhost:8080/api/invoice/109,4,0,0
+1575157644164,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33471,132,1,1,http://localhost:8080/api/invoice/3,3,0,0
+1575157644167,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,134,1,1,http://localhost:8080/api/invoice/110,3,0,0
+1575157644171,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33478,134,1,1,http://localhost:8080/api/invoice/111,3,0,0
+1575157644174,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33489,134,1,1,http://localhost:8080/api/invoice/112,3,0,0
+1575157644178,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,134,1,1,http://localhost:8080/api/invoice/113,3,0,0
+1575157644181,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,134,1,1,http://localhost:8080/api/invoice/114,4,0,0
+1575157644186,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33481,134,1,1,http://localhost:8080/api/invoice/115,3,0,0
+1575157644189,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33500,134,1,1,http://localhost:8080/api/invoice/116,3,0,0
+1575157644193,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33475,134,1,1,http://localhost:8080/api/invoice/117,2,0,0
+1575157644196,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33481,134,1,1,http://localhost:8080/api/invoice/118,3,0,0
+1575157644199,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33475,134,1,1,http://localhost:8080/api/invoice/119,3,0,0
+1575157644203,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,134,1,1,http://localhost:8080/api/invoice/120,3,0,0
+1575157644206,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33473,133,1,1,http://localhost:8080/api/invoice/11,3,0,0
+1575157644210,2,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,134,1,1,http://localhost:8080/api/invoice/121,2,0,0
+1575157644213,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33478,134,1,1,http://localhost:8080/api/invoice/122,3,0,0
+1575157644216,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33489,134,1,1,http://localhost:8080/api/invoice/123,4,0,0
+1575157644221,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33488,134,1,1,http://localhost:8080/api/invoice/124,3,0,0
+1575157644225,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,134,1,1,http://localhost:8080/api/invoice/125,2,0,0
+1575157644228,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33481,134,1,1,http://localhost:8080/api/invoice/126,3,0,0
+1575157644232,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33500,134,1,1,http://localhost:8080/api/invoice/127,4,0,0
+1575157644237,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33475,134,1,1,http://localhost:8080/api/invoice/128,3,0,0
+1575157644240,3,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33481,134,1,1,http://localhost:8080/api/invoice/129,3,0,0
+1575157644244,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33475,134,1,1,http://localhost:8080/api/invoice/130,3,0,0
+1575157644248,4,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,134,1,1,http://localhost:8080/api/invoice/131,4,0,0
+1575157644253,118,getAllInvoices,200,OK,Thread Group 1-1,text,true,,4033260,131,1,1,http://localhost:8080/api/invoices,8,0,0
+1575157644385,5,deleteInvoice,200,OK,Thread Group 1-1,text,true,,152,219,1,1,http://localhost:8080/api/invoice/20,5,0,0
+1575157644391,76,getDeletedInvoice,500,Server Error,Thread Group 1-1,text,true,,8529,133,1,1,http://localhost:8080/api/invoice/20,75,0,0
+1575157644468,7,updateInvoice,200,OK,Thread Group 1-1,text,true,,152,344,1,1,http://localhost:8080/api/invoice/13,7,0,1
+1575157644475,4,getUpdatedInvoice,200,OK,Thread Group 1-1,text,true,,33473,133,1,1,http://localhost:8080/api/invoice/13,3,0,0
+1575157933112,691,createInvoice,200,OK,Settings 1-1,text,true,,33486,360,1,1,http://localhost:8080/api/invoice,685,0,3
+1575157933802,25,createInvoice,200,OK,Settings 1-1,text,true,,33476,350,1,1,http://localhost:8080/api/invoice,23,0,0
+1575157933827,20,createInvoice,200,OK,Settings 1-1,text,true,,33487,361,1,1,http://localhost:8080/api/invoice,19,0,0
+1575157933847,17,createInvoice,200,OK,Settings 1-1,text,true,,33486,360,1,1,http://localhost:8080/api/invoice,17,0,0
+1575157933865,13,createInvoice,200,OK,Settings 1-1,text,true,,33485,355,1,1,http://localhost:8080/api/invoice,12,0,0
+1575157933878,15,createInvoice,200,OK,Settings 1-1,text,true,,33479,353,1,1,http://localhost:8080/api/invoice,14,0,0
+1575157933893,13,createInvoice,200,OK,Settings 1-1,text,true,,33498,368,1,1,http://localhost:8080/api/invoice,12,0,0
+1575157933906,21,createInvoice,200,OK,Settings 1-1,text,true,,33473,347,1,1,http://localhost:8080/api/invoice,20,0,0
+1575157933928,12,createInvoice,200,OK,Settings 1-1,text,true,,33479,353,1,1,http://localhost:8080/api/invoice,12,0,0
+1575157933941,13,createInvoice,200,OK,Settings 1-1,text,true,,33473,347,1,1,http://localhost:8080/api/invoice,12,0,0
+1575157933954,13,createInvoice,200,OK,Settings 1-1,text,true,,33486,359,1,1,http://localhost:8080/api/invoice,12,0,0
+1575157934341,226,selectAllInvoices,200,OK,Thread Group 1-1,text,true,,26,0,1,1,null,226,0,224
+1575157934568,25,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,132,1,1,http://localhost:8080/api/invoice/0,25,0,2
+1575157934594,9,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33476,132,1,1,http://localhost:8080/api/invoice/1,8,0,0
+1575157934603,10,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33487,132,1,1,http://localhost:8080/api/invoice/2,9,0,0
+1575157934613,10,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,132,1,1,http://localhost:8080/api/invoice/3,9,0,0
+1575157934624,18,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33485,132,1,1,http://localhost:8080/api/invoice/4,17,0,0
+1575157934642,10,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33479,132,1,1,http://localhost:8080/api/invoice/5,10,0,0
+1575157934653,8,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33498,132,1,1,http://localhost:8080/api/invoice/6,7,0,0
+1575157934661,32,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33473,132,1,1,http://localhost:8080/api/invoice/7,32,0,0
+1575157934694,8,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33479,132,1,1,http://localhost:8080/api/invoice/8,7,0,0
+1575157934702,10,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33473,132,1,1,http://localhost:8080/api/invoice/9,9,0,0
+1575157934713,8,getInvoiceById,200,OK,Thread Group 1-1,text,true,,33486,133,1,1,http://localhost:8080/api/invoice/10,7,0,0
+1575157934721,59,getAllInvoices,200,OK,Thread Group 1-1,text,true,,366791,131,1,1,http://localhost:8080/api/invoices,22,0,0
+1575157934782,21,deleteInvoice,200,OK,Thread Group 1-1,text,true,,152,218,1,1,http://localhost:8080/api/invoice/4,21,0,0
+1575157934804,112,getDeletedInvoice,500,Server Error,Thread Group 1-1,text,true,,8687,132,1,1,http://localhost:8080/api/invoice/4,112,0,0
+1575157934917,13,updateInvoice,200,OK,Thread Group 1-1,text,true,,152,343,1,1,http://localhost:8080/api/invoice/0,13,0,2
+1575157934931,7,getUpdatedInvoice,200,OK,Thread Group 1-1,text,true,,33472,132,1,1,http://localhost:8080/api/invoice/0,6,0,0
+1575157934943,221,RemoveDataFromDB,200,OK,Remove Group 1-1,text,true,,10,0,1,1,null,221,0,219
