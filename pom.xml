@@ -90,7 +90,14 @@
       <artifactId>jackson-core</artifactId>
       <version>${com.fasterxml.jackson.version}</version>
     </dependency>
-
+      <!-- For Lab 5 Selenium -->
+      <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java-->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.141.59</version>
+    </dependency>
+      <!-- For Lab 5 Selenium ^ -->
   </dependencies>
   <!-- For Lab 4 -->
   <build>
